@@ -8,7 +8,7 @@ body{
     padding:  0  var(--padding-side);
 }
 :root{
-    --padding-side: 150px;
+    --padding-side: 100px;
 }
 header{
     padding: 20px 0;
