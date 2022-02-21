@@ -88,6 +88,10 @@ width: 100%;
     padding: 20px 0;
     display: flex;
     flex-direction: column;
+    background-color: black;
+    color: white;
+    height: fit-content !important;
+    margin: 10px 0;
 }
 .input{
     display: flex;
@@ -99,6 +103,9 @@ input{
     padding: 10px;
     font-size: 2rem;
     outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
 }
 textarea{
     padding: 10px;
@@ -106,4 +113,29 @@ textarea{
     resize: none;
     width: 100%;
     outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.input button{
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.footer h2{
+    margin: 10px 0;
+}
+.sec-f{
+    margin-top: 10px;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
 }
