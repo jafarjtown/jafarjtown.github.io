@@ -24,6 +24,7 @@ header ul{
 }
 header li{
     margin: 10px 20px;
+    word-break: none;
 }
 header a, .section a{
     border: 1px solid black;
@@ -145,6 +146,7 @@ footer{
         margin: 0;
     }
     header ul{
+        width: 50%
         flex-direction: column;
     }
     body{
