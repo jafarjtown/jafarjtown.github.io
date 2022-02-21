@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+body{
+    padding:  0  var(--padding-side);
+}
+:root{
+    --padding-side: 150px;
+}
+header{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+header li{
+    margin: 10px;
+}
+header a, .section a{
+    border: 1px solid black;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: -6px -5px transparent, -7px -6px black;
+}
+.scroll-header{
+    border-bottom: 2px solid black;
+}
+.section, .section-f{
+    width: 100%;
+    display: flex;
+}
+.section-f{
+    flex-direction: column;
+    font-size: 30px;
+}
+.section-f p{
+font-size: 2rem;
+padding: 10px 0;
+width: 100%;
+}
+.section-f a{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+.section > div{
+    width: 50%;
+    padding: 10px;
+    height: 400px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section p{
+    font-size: 1.4rem;
+    margin: 20px 0;
+}
+.section h2{
+    margin-bottom: 50px;
+}
+.white{
+    background-color: white;
+}
+.black{
+    background-color: black;
+    color: white;
+}
+.black a{
+    color: white;
+    border: 1px solid white;
+    box-shadow: -6px -5px transparent, -7px -6px white;
+}
+.form{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+input{
+    width: 400px;
+    padding: 10px;
+    font-size: 2rem;
+    outline: none;
+}
+textarea{
+    padding: 10px;
+    font-size: 1.5rem;
+    resize: none;
+    width: 100%;
+    outline: none;
+}
