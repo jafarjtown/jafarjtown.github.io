@@ -149,6 +149,7 @@ footer{
         width: fit-content;
         flex-direction: column;
     }
+    header li{ margin: 15px 0;}
     body{
         padding: 0;
     }
