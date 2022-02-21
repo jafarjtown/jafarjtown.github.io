@@ -8,7 +8,7 @@ body{
     padding:  0  var(--padding-side);
 }
 :root{
-    --padding-side: 10px;
+    --padding-side: 50px;
 }
 header{
     padding: 20px 0;
@@ -151,7 +151,7 @@ footer{
     }
     header li{ margin: 15px 0;}
     body{
-        padding: 0;
+        padding: 0 10px;
     }
     input{
         width: 100%;
