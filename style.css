@@ -146,7 +146,7 @@ footer{
         margin: 0;
     }
     header ul{
-        width: 50%
+        width: fit-content;
         flex-direction: column;
     }
     body{
