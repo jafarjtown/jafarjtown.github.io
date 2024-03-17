@@ -1,0 +1,188 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Sans-Serif;
+  scroll-behavior: smooth;
+  --dark-bg: #292929;
+  --light-bg: #f3f4f6;
+}
+p{
+  letter-spacing: .7px;
+  line-height: 20px;
+  margin: 7px 0;
+}
+p > span{
+  background-color: #94aadf;
+  margin: 2px;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+p:first-letter{
+  font-size: 30px;
+}
+.intro{
+  text-align: left;
+  padding: 10px;
+  background-color: var(--light-bg);
+}
+.intro h1{
+  margin-bottom: 5px;
+  font-size: 60px;
+}
+.intro h3{
+  background-color: #bc4c83;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 5px;
+  color: white;
+}
+main > div{
+  padding: 10px 50px;
+}
+.hero{
+  background-color: var(--light-bg);
+  display: grid;
+  align-items: center;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:"p img";
+  border-bottom: .5px solid gray;
+}
+.hero .img{
+  grid-area: img;
+  width: 100%;
+  border: .1px solid gray;
+  border-radius: 2px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.hero p{
+  grid-area: p;
+}
+.hero .img .nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: #ececec;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  align-items: center;
+  padding: 5px;
+  border-bottom: .1px solid gray;
+}
+.hero .img .nav ul{
+  display: flex;
+  list-style: none;
+  gap: 3px;
+}
+.hero .img ul span{
+  width: 20px;
+  height: 20px;
+  
+  border-radius: 100%;
+}
+.d1{
+  background-color: red;
+}
+.d2{
+  background-color: green;
+}
+.d3{
+  background-color: blue;
+}
+.hero .img .nav li a{
+   color: #92e7e7;
+}
+.hero .img img{
+  width: 100%;
+  height: 100%;
+}
+.about{
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-color: var(--dark-bg);
+  color: white;
+}
+.projects{
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-color: var(--light-bg);
+}
+.projects-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.projects .project{
+  width: 300px;
+  height: 300px;
+  border: .1px solid gray;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.projects-container .project span,
+.projects-container .project a{
+  padding: 5px 10px;
+}
+.projects-container .project img{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  flex: 1;
+  object-fit: contain;
+  width: 100%;
+  background-color: var(--dark-bg);
+}
+.contact{
+  background-color: var(--dark-bg);
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.contact  div{
+  display: flex;
+  flex-direction: column;
+}
+.contact ul{
+  list-style: none;
+  margin: 4px 10px;
+}
+.contact .form{
+  width: 500px;
+  padding: 10px 4px;
+}
+.contact .form input,
+.contact .form textarea{
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  border: .5px solid var(--light-bg);
+}
+.contact a{
+  color: #89e0f2;
+  text-decoration: none;
+}
+.contact button{
+  width: fit-content;
+  padding: 9px 30px;
+  background-color: var(--light-bg);
+  border: none;
+  margin: 10px 0;
+}
+@media screen and (max-width:750px){
+  .contact .form{
+  width: 100%;
+  padding: 10px 4px;
+}
+  main > div {
+    padding: 10px 15px;
+  }
+  .hero{
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-areas: "img"
+                       "p";
+}
+}
